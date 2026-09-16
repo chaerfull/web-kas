@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Care - Skincare Wanita</title>
+    <style>
+        /* Desain Tampilan (CSS) */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
+        body { background-color: #fdfaf6; color: #4a4a4a; line-height: 1.6; }
+        
+        /* Navigasi Atas */
+        header { background-color: #f4dada; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05); z-index: 100; }
+        header h1 { color: #8c5b5b; font-size: 24px; letter-spacing: 2px; }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav ul li a { text-decoration: none; color: #5c4040; font-weight: bold; transition: color 0.3s; }
+        nav ul li a:hover { color: #d18a8a; }
+
+        /* Struktur Konten */
+        section { padding: 80px 20px; max-width: 1100px; margin: 0 auto; text-align: center; }
+        h2 { color: #8c5b5b; margin-bottom: 30px; font-size: 32px; }
+        
+        /* Hero / Beranda */
+        #beranda { background-color: #fff; padding: 80px 20px; border-radius: 15px; margin-top: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+        #beranda p { font-size: 18px; color: #7a7a7a; margin-top: 15px; }
+
+        /* Grid Produk & Tips */
+        .grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .card { background-color: #fff; width: 300px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.04); border-top: 4px solid #f4dada; text-align: left; }
+        .card h3 { color: #8c5b5b; margin-bottom: 10px; }
+
+        /* Formulir Kontak */
+        form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.04); }
+        input, textarea { padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; }
+        button { background-color: #8c5b5b; color: white; padding: 12px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: 0.3s; }
+        button:hover { background-color: #6b4444; }
+
+        footer { background-color: #f4dada; text-align: center; padding: 20px; color: #8c5b5b; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Menu -->
+    <header>
+        <h1>GLOW & CARE</h1>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bagian Beranda -->
+    <section id="beranda">
+        <h2>Pancarkan Kecantikan Alami Anda</h2>
+        <p>Glow & Care hadir untuk menemani perjalanan kulit sehatmu dengan rangkaian produk yang aman untuk skin barrier alami wanita.</p>
+    </section>
+
+    <!-- Bagian Produk -->
+    <section id="produk">
+        <h2>Koleksi Perawatan Kami</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Gentle Cleanser</h3>
+                <p>Pembersih wajah ber-pH rendah yang mengangkat kotoran tanpa membuat kulit terasa ketarik.</p>
+            </div>
+            <div class="card">
+                <h3>Hydrating Toner</h3>
+                <p>Kandungan Rose Water untuk mengembalikan hidrasi setelah mencuci muka.</p>
+            </div>
+            <div class="card">
+                <h3>Ceramide Moisturizer</h3>
+                <p>Mengunci kelembapan dan memperbaiki skin barrier agar selalu glowing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tips -->
+    <section id="tips">
+        <h2>Tips Rutinitas Dasar</h2>
+        <div class="grid">
+            <div class="card" style="width: 100%; max-width: 700px;">
+                <h3>1. Double Cleansing</h3>
+                <p>Gunakan micellar water di malam hari, lalu lanjutkan dengan sabun cuci muka.</p>
+                <br>
+                <h3>2. Wajib Pelembap & Sunscreen</h3>
+                <p>Selalu gunakan pelembap pagi dan malam. Akhiri dengan Sunscreen minimal SPF 30 di pagi hari untuk mencegah penuaan dini.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="kontak">
+        <h2>Konsultasi Kulitmu</h2>
+        <p style="margin-bottom: 20px;">Jangan ragu menghubungi kami untuk pertanyaan seputar kulit.</p>
+        <form>
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Alamat Email" required>
+            <textarea rows="4" placeholder="Pesan atau Pertanyaan Anda" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <!-- Catatan Kaki -->
+    <footer>
+        &copy; 2026 Glow & Care Skincare. Seluruh Hak Cipta Dilindungi.
+    </footer>
+
+</body>
+</html>
